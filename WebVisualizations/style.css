@@ -1,0 +1,153 @@
+/*---------------ALL PAGE-------------*/
+
+body{
+    background-color: rgb(236, 232, 232);
+    font-size: 18px;
+}
+
+/*----------------NAVBAR-------------*/
+
+/* Whith backgroud for the content in the button dropdown */
+.white_bg{
+    background-color: white;
+}
+
+/* Latitude with green padding */
+#green_padding{
+    background-color: lightseagreen;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    margin-left: 60px;
+}
+
+/* Color and fontsize for multiple text ocasions */
+.blackcolor{
+    color: black;
+    font-size: 13px;
+}
+
+/* Make the navbar the smaller the size of the green padding */
+.navbar {
+	margin:0;
+	padding: 0px;
+}
+
+/* color and fontsize for the nav items */
+.nav-item{
+    font-size: 13px;
+    color: black;
+}
+
+/* Right margin for the nav items. It is under a media because I don't want 
+margin when is a small screen*/
+@media screen and (min-width: 768px) {
+    .right_nav {
+        margin-right: 60px;
+    }
+  }
+
+
+/* For smal screen size */
+/* Make the banner green for small screens */
+@media screen and (max-width: 767px) {
+    .greenBanner {
+        background-color:  lightseagreen;
+    }
+  }
+
+/* give a right margin to the Nav button */
+.rightmargin {
+    margin-right: 60px;
+}
+
+/* Left margin for the dropdown list from the button */
+.left_margin{
+    margin-left: 20px;
+}
+
+
+/*------------------BODY-----------------*/
+
+/* Landing Page */
+/* text and picture float */
+#float{
+    float: left;
+}
+
+
+/* Titles */
+/* Main title on every page */
+#main_title{
+    color: lightseagreen;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+/* Secondary title on Landing Page */
+#sec_title{
+    color: lightseagreen;
+    padding: 15px;
+    font-size: 30px;
+}
+/* sub-titles on comparisson page */
+.subtitles{
+    text-align: center;
+    font-size: 25px;
+    color: lightseagreen;
+    margin-top: 20px;
+}
+
+
+/* Boxes */
+/* Main box on every page */
+#main_box{
+    background-color: white;
+    margin-top: 40px;
+}
+
+/* Secondary box for Landing page */
+#sec_box{
+    background-color: white;
+    margin-top: 40px;
+}
+
+/* Reduce text size at 1100px */
+@media screen and (max-width: 1100px) {
+    div.small_text {
+      font-size: 15px;
+    }
+  }
+
+/* Reduce title size at 1100px */
+@media screen and (max-width: 1100px) {
+    div.small_title {
+      font-size: 20px;
+    }
+  }
+
+/* When the screen is small, horizontal line separating the Comparisson Charts */
+@media screen and (max-width: 767px) {
+    div.comparissonHR {
+        border-bottom: 1px solid lightseagreen;
+    }
+  }
+
+/* Top margin for the data table */
+table{
+    margin-top: 30px;
+}
+
+
+/* Small Charts */
+/* Green border around comaprissona and visualization charts */
+.active,.figure:hover{
+    border-style:solid;
+    border-color: lightseagreen;
+}
+
+/* Bottom of the page */
+.bottomPage{
+    margin-bottom: 60px;
+}

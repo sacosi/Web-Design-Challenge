@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cloudiness</title>
+</head>
+
+<body>
+    <!-- ------------ NAVIGATION BAR --------------- -->
+    <div class="white_bg">
+        <nav class="navbar navbar-expand-md navbar-light greenBanner">
+            <a class="navbar-brand" id="green_padding" href="LandingPage.html">Latitude</a>
+            <button class="navbar-toggler rightmargin" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse right_nav justify-content-end white_bg" id="navbarNavDropdown">
+                <ul class="navbar-nav left_margin">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Plots</a>
+                        <div class="dropdown-menu blackcolor" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="MaxTemperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comparisson.html">Comparisson</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="container-fluid bottomPage">
+            <div class="row">
+
+                <!-- ------------------------MAIN CHART---------------------------- -->
+
+                <div class="col-md-5 offset-md-1 col-sm-10 offset-sm-1" id="main_box">
+                    <h1 id="main_title">Cloudiness</h1>
+                    <hr>
+                    <div class="text-center">
+                        <img id="main_chart" class="text-center" src="Resources/assets/images/Fig3.png"
+                            alt="Cloudiness Chart" width=75%>
+                        <div class="small_text">
+                            <p>
+                                In this plot we are taking a closer look at how the Cloudiness of a City varies
+                                depending on how far or close it is from the equator.
+                                This is a very interesting plot. The Latitude seems to not have a big impact on the
+                                cloudiness value. However, at the time of the year that this study was performed, there
+                                seems to be a comon values of cloudiness for interval of 20% with the exception of the
+                                60% mark.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------vISUALIZATIONS / RIGHT SIDE---------------------------- -->
+
+                <div class="col-md-4 offset-md-1 col-sm-10 offset-sm-1">
+                    <div class="box" id="sec_box">
+
+                        <h1 id="sec_title">Visualizations</h1>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="MaxTemperature.html">
+                                        <img class="figure" src="Resources/assets/images/Fig1.png"
+                                            alt="Max Temperature Chart" width=100% data-toggle="tooltip"
+                                            title="Max Temperature">
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="Humidity.html">
+                                        <img class="figure" src="Resources/assets/images/Fig2.png" alt="Humidity Chart"
+                                            width=100% data-toggle="tooltip" title="Humidity">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="Cloudiness.html">
+                                        <img class="figure active" src="Resources/assets/images/Fig3.png"
+                                            alt="Cloudiness Chart" width=100% data-toggle="tooltip" title="Cloudiness">
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="WindSpeed.html">
+                                        <img class="figure" src="Resources/assets/images/Fig4.png"
+                                            alt="Wind Speed Chart" width=100% data-toggle="tooltip" title="Wind Speed">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
